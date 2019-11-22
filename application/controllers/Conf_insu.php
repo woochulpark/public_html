@@ -41,9 +41,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 				//print_r($this->session->userdata);
 				
-				$ch_way = $this->session->userdata['choiceway'];
-				$put_wr = $this->session->userdata['wr_session'];
-				$com_mem_code = $this->session->userdata['company_code'];		
+				
 				$curr_time = date("Y-m-d H:m:s", time());
 					
 				if($ch_way == "S"){// 조회 입력
