@@ -16,6 +16,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			$req = $this->input->post();
 			$mv_ch		 = isset($req['mvch'])	&&$req['mvch']				? $req['mvch']			: '';
 
+			$ch_way = $this->session->userdata['choiceway'];
+			$put_wr = $this->session->userdata['wr_session'];
+			$com_mem_code = $this->session->userdata['company_code'];		
+
 			if($mv_ch != ''){
 				
 				switch($mv_ch){
